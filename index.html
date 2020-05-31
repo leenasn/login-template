@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./lib/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./custom/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-md-12 min-vh-100 d-flex flex-column justify-content-center"
+        >
+          <div class="row">
+            <div class="col-lg-6 col-md-8 mx-auto">
+              <img
+                src="./assets/images/logo.png"
+                class="img-fluid rounded-circle mx-auto d-block log-img"
+                alt="Brand Logo"
+              />
+              <div class="card app-card">
+                <div class="card-header app-card-header">
+                  <ul class="nav nav-pills app-ul">
+                    <li class="nav-item app-li">
+                      <a class="nav-link app-link active">Sign In</a>
+                    </li>
+                    <li class="nav-item app-li">
+                      <a class="nav-link app-link">Sign Up</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-body app-card-body">
+                  <form
+                    class="form"
+                    role="form"
+                    autocomplete="off"
+                    id="formLogin"
+                    novalidate=""
+                    method="POST"
+                  >
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control form-control-lg app-input"
+                        name="username"
+                        placeholder="Email ID"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="password"
+                        class="form-control form-control-lg app-input"
+                        placeholder="Password"
+                      />
+                    </div>
+                    <div class="extra-actions">
+                      <label class="chk-container"
+                        >Stay signed in
+                        <input type="checkbox" checked />
+                        <span class="chk-checkmark"></span>
+                      </label>
+                      <a class="app-forgot-lnk">Forgot Password</a>
+                    </div>
+                    <button type="button" class="app-login-btn">
+                      Sign in
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

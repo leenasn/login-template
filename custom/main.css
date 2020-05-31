@@ -1,0 +1,152 @@
+body {
+  background: #f1f1f1;
+}
+
+.app-card {
+  border-radius: 8px !important;
+  border: none;
+  background: #f8f8f8;
+}
+
+.app-card-header {
+  background: #ffffff;
+  border-radius: 8px !important;
+  border: none;
+  padding: 0 !important;
+}
+
+.app-card-body {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+}
+
+.app-ul {
+  padding: 2px;
+}
+
+.app-li {
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.app-li:active {
+  opacity: 0.5;
+}
+
+.app-li > .app-link {
+  border-radius: 8px;
+  color: #00be8d !important;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.app-link.active {
+  color: #ffffff !important;
+  background-color: #00be8d !important;
+}
+
+.app-input {
+  border: none;
+  border-radius: 5px;
+  background: #ffffff;
+}
+
+::placeholder {
+  color: #000000 !important;
+  opacity: 0.7 !important;
+  font-size: 14px !important;
+}
+
+.app-forgot-lnk {
+  float: right;
+  color: #00be8d !important;
+  text-decoration: underline !important;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+.app-forgot-lnk:active {
+  opacity: 0.5;
+}
+
+.chk-container {
+  display: initial;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+}
+
+.chk-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.chk-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #ffffff;
+}
+
+.chk-container input:checked ~ .chk-checkmark {
+  background-color: #00be8d !important;
+}
+
+.chk-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.chk-container input:checked ~ .chk-checkmark:after {
+  display: block;
+}
+
+.chk-container .chk-checkmark:after {
+  left: 8px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #ffffff;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.app-login-btn {
+  width: 100%;
+  margin-top: 16px;
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  background: #00be8d;
+  color: #ffffff;
+  text-transform: uppercase;
+  box-shadow: -5px -5px 10px 0 rgba(255, 255, 255, 0.5),
+    5px 5px 10px 0 rgba(94, 95, 97, 0.5);
+  border-radius: 30px;
+  font-weight: bold;
+}
+button:active {
+  opacity: 0.5;
+}
+button:focus {
+  outline: 0;
+}
+.log-img {
+  margin-bottom: 30px;
+}
